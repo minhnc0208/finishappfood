@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_itemMonAn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imgItemMonAnNguoiDung"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tvItemMonAnNguoiDung"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center_vertical"
+           android:layout_toLeftOf="@+id/tvMenu_Sua_Xoa"
+            android:layout_toRightOf="@+id/imgItemMonAnNguoiDung"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMenu_Sua_Xoa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="..."
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTitleDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMenu_Sua_Xoa"
+            android:layout_toRightOf="@+id/imgItemMonAnNguoiDung"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="Ngày đăng: "/>
+
+        <TextView
+            android:id="@+id/tvNgayDang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMenu_Sua_Xoa"
+            android:layout_toRightOf="@+id/tvTitleDate"
+            android:layout_alignBottom="@+id/tvTitleDate"
+            android:layout_alignTop="@+id/tvTitleDate"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:hint="Ngày đăng "/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

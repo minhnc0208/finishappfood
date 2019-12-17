@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flSuaPhanLoai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="80dp">
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imgMonAnPL"-->
+            <!--            android:layout_width="60dp"-->
+            <!--            android:layout_height="60dp"-->
+            <!--            android:src="@drawable/ic_launcher_foreground" />-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tvTenMonAnPL"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_toRightOf="@+id/imgMonAnPL"-->
+            <!--            android:hint="Tên món ăn"-->
+            <!--            android:textSize="22dp" />-->
+
+            //Thực đơn
+
+            <TextView
+                android:id="@+id/tvTTCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Thực Đơn"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvThucDon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvTTCT"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spnSuaThucDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/tvTTCT"
+                    android:backgroundTint="#FF00DA"
+                    android:gravity="center"
+                    android:prompt="@string/title_loaithucdon"
+                    android:spinnerMode="dialog" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            //Loại món ăn
+
+            <TextView
+                android:id="@+id/tvTTLMA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvThucDon"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="Loại Món Ăn"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLMA"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvTTLMA"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spnSuaLMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/tvTTLMA"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FF00DA"
+                    android:gravity="center"
+                    android:prompt="@string/title_loaimonan"
+                    android:spinnerMode="dialog" />
+            </androidx.cardview.widget.CardView>
+
+            //Cách thực hiện
+
+            <TextView
+                android:id="@+id/tvTTCTH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvLMA"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="Cách Thực Hiện"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCTH"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvTTCTH"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spnSuaCTH"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FF00DA"
+                    android:gravity="center"
+                    android:prompt="@string/title_cachthuchien"
+                    android:spinnerMode="dialog" />
+            </androidx.cardview.widget.CardView>
+
+            //Cách dip mùa
+
+            <TextView
+                android:id="@+id/tvTTDipMua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvCTH"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="Dịp  Mùa"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDipMua"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvTTDipMua"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spnSuaDipMua"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FF00DA"
+                    android:gravity="center"
+                    android:prompt="@string/title_loaimua"
+                    android:spinnerMode="dialog" />
+            </androidx.cardview.widget.CardView>
+
+            //Mục đích
+
+            <TextView
+                android:id="@+id/tvTTMucDich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvDipMua"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik_medium"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="Mục Đích"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvMucDich"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvTTMucDich"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spnSuaMucDich"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FF00DA"
+                    android:gravity="center"
+                    android:prompt="@string/title_mucdich"
+                    android:spinnerMode="dialog" />
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="unlabeled">
+
+        <Button
+            android:id="@+id/btnSuaPhanLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/background_button_save_monan"
+            android:inputType="textPersonName"
+            android:text="Lưu &amp; Hoàn tất"
+            android:textColor="@drawable/button_change_text_color_black_red"
+            android:textSize="18sp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</FrameLayout>

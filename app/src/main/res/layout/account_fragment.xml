@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBackGroundUser"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#BCE0FD"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_avata_user" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatarUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:padding="5dp"
+        android:src="@drawable/img_chef" />
+
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgAvatarUser"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_tennguoidung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_emailnguoidung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tennguoidung"
+            android:text="fpt.edu.vn"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_account_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_cong"
+            android:padding="5dp"
+            android:text="Thông tin cá nhân"
+            android:textColor="@drawable/button_change_text_color_black_red" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_congthuc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/info"
+        android:layout_marginLeft="16dp"
+        android:gravity="center|left"
+        android:text="Công thức"
+        android:textColor="#2699FB"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_monandatao"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_congthuc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_w_shadow"
+        android:drawableStart="@drawable/outlinecreate"
+        android:drawableEnd="@drawable/baselinekeyboardarrowright"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:paddingLeft="16dp"
+        android:text="Món ăn đã tạo"
+        android:textAlignment="viewStart"
+        android:textColor="@drawable/button_change_text_color_black_red" />
+
+    <Button
+        android:id="@+id/btn_monandathuchien"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_monandatao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_w_shadow"
+        android:drawableStart="@drawable/baselineplaylistaddcheck"
+        android:drawableEnd="@drawable/baselinekeyboardarrowright"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:paddingLeft="16dp"
+        android:text="Món ăn đã thực hiện"
+        android:textAlignment="viewStart"
+        android:textColor="@drawable/button_change_text_color_black_red" />
+
+    <Button
+        android:id="@+id/btn_monanyeuthich"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_monandathuchien"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_w_shadow"
+        android:drawableStart="@drawable/baselinefavorite"
+        android:drawableEnd="@drawable/baselinekeyboardarrowright"
+        android:drawablePadding="10dp"
+        android:elevation="2dp"
+        android:paddingLeft="16dp"
+        android:text="Món ăn yêu thích"
+        android:textAlignment="viewStart"
+        android:textColor="@drawable/button_change_text_color_black_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_doimatkhau"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_khac"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_w_shadow"
+            android:drawableStart="@drawable/usericon"
+            android:drawableEnd="@drawable/baselinekeyboardarrowright"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:paddingLeft="16dp"
+            android:text="Đổi mật khẩu"
+            android:textAlignment="viewStart"
+            android:textColor="@drawable/button_change_text_color_black_red" />
+
+        <Button
+            android:id="@+id/btn_dangxuat"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_doimatkhau"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_w_shadow"
+            android:drawableLeft="@drawable/baselineexittoapp"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="Đăng xuất"
+            android:textColor="@drawable/button_change_text_color_black_red" />
+
+        <TextView
+            android:id="@+id/tv_khac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:text="Khác"
+            android:textColor="#2699FB"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

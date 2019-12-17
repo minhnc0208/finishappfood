@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.duanmot.myapplication">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logomythucvietnam2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <activity android:name=".Search_LoaiMonAn_Nhau"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_Lau"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_BanhVaBanhNgot"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_TotChoSucKhoe"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_NhanhVaDe"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+
+
+        <activity android:name=".Search_LoaiMonAn_Chinh"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+
+        <activity android:name=".Search_LoaiMonAn_Spaghetti"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+
+
+        <activity android:name=".Search_Loai_NuocCham"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+
+        <activity android:name=".Search_LoaiMonAn_Salad"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+
+        <activity android:name=".Search_Loai_ThucUong"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_Chay"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_KhaiVi"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_Vat"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_Toi"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+
+        <activity android:name=".Search_LoaiMonAn_Trua"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+        <activity android:name=".Search_LoaiMonAn_Sang"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search_MonAn_Activity" />
+
+        </activity>
+        <activity
+            android:name=".Search_MonAn_Activity"
+            android:label="@string/app_no_name"
+            android:theme="@style/AppTheme.DarkActionBar">
+            // gọi nút back trên toolbar
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ManHinhChinh" />
+        </activity>
+        <activity android:name=".SuaMonAn" />
+        <activity
+            android:name=".Home_ChiTiet_MonAn"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".AccoutPassChange" />
+
+        <activity android:name=".ListMonAn_YeuThich_Activity" />
+        <activity android:name=".ListMonAn_ThucHien_Activity" />
+        <activity android:name=".ManHinhChao.SlideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ManHinhChinh"></activity>
+        <activity
+            android:name=".DanhSachMonAnNguoiDung"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+            <!-- // gọi nút back trên toolbar -->
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".TaoMonAn" /> -->
+        </activity>
+        <activity android:name=".TaoMonAn" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

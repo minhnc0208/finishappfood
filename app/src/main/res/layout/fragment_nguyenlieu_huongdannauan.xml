@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NguyenLieu_HuongDanNauAnFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ScrollView
+                    android:id="@+id/sv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ECEBEB"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Thêm nguyên liệu"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ECEBEB"
+                            android:paddingLeft="35dp"
+                            android:paddingBottom="5dp"
+                            android:text="Ví dụ: 100gr Thịt Bò" />
+
+                        <LinearLayout
+                            android:id="@+id/llcontainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp" />
+
+                        <TextView
+                            android:id="@+id/tvadd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableLeft="@drawable/ic_add_circle_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:padding="5dp"
+                            android:text="Thêm nguyên liệu"
+                            android:textColor="@drawable/button_change_text_color_black_red"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTTHD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ECEBEB"
+                        android:paddingLeft="35dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="15dp"
+                        android:text="Hướng dẫn cách làm"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <ScrollView
+                        android:id="@+id/svBuocHuongDan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTTHD">
+
+                        <LinearLayout
+                            android:id="@+id/llcontainerHuongDan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!-- Content here -->
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/tvThemBuocHuongDan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/svBuocHuongDan"
+                        android:layout_marginTop="2.5dp"
+                        android:layout_weight="9"
+                        android:drawableLeft="@drawable/ic_add_circle_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:text="Thêm bước"
+                        android:textColor="@drawable/button_change_text_color_black_red"
+                        android:textSize="22dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btnSaveNLHDNA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/background_button_save_monan"
+            android:inputType="textPersonName"
+            android:text="Lưu &amp; Tiếp tục"
+            android:textColor="@drawable/button_change_text_color_black_red"
+            android:textSize="18sp" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</FrameLayout>

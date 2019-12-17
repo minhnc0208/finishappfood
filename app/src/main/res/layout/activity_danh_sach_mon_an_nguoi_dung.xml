@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".DanhSachMonAnNguoiDung">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDSMAND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F85E54">
+
+        <ImageView
+            android:id="@+id/imgBackDSMAND"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_keyboard_back_left_white_24dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btnTaoMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarDSMAND"
+        android:background="@drawable/background_button_new_monan"
+        android:text="Tạo Món Ăn"
+        android:textColor="@drawable/button_change_text_color_white_black"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/lvMonAnNguoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnTaoMonAn" />
+
+</RelativeLayout>

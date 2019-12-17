@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mỹ Thực Việt Nam</string>
+    <string name="app_no_name"></string>
+    <string name="title_khauphan">Chọn Khẩu Phần</string>
+
+    <string name="title_loaithucdon">Chọn Loại Thực Đơn</string>
+    <string name="title_loaimonan">Chọn Loại Món Ăn</string>
+    <string name="title_cachthuchien">Chọn Cách Thực Hiện</string>
+    <string name="title_loaimua">Chọn Mùa</string>
+    <string name="title_mucdich">Chọn Mục Đích Nấu Ăn</string>
+    <string name="hint_search">Vui lòng nhập món ăn cần tìm</string>
+
+
+</resources>

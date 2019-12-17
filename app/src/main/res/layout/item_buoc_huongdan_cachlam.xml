@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgdeleteBuoc"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@id/tvTenBuoc"
+                android:layout_alignBottom="@id/tvTenBuoc"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_delete_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvTenBuoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/imgdeleteBuoc"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvNoiDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgdeleteBuoc"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actNoiDung"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#EEEEEE"
+                    android:gravity="top|left"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgTungBuoc"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_below="@+id/cvNoiDung"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:background="@drawable/draw_dotted_border"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/ic_add_a_photo_white_24dp" />-->
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

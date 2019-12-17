@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.duanmot.myapplication"
+        minSdkVersion 25
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //màn hình chào (giới thiệu)
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
+    //bo tròn ảnh
+    implementation 'de.hdodenhof:circleimageview:1.2.1'
+    //loading
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support:cardview-v7:29.0.0'
+    implementation 'com.android.support:design:29.0.0'
+
+    //    video
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // rounded images
+    implementation 'de.hdodenhof:circleimageview:1.2.1'
+
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // Glide library
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
+}
